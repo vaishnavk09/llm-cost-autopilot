@@ -1,0 +1,11 @@
+[project]
+name = "llm-cost-autopilot"
+version = "0.1.0"
+description = "Intelligent LLM routing layer that sends each request to the cheapest capable model."
+requires-python = ">=3.11"
+readme = "README.md"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+pythonpath = ["."]

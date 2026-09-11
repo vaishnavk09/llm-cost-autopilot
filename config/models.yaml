@@ -1,0 +1,65 @@
+# Shadow list prices are USD per 1M tokens (Groq / Gemini published rates).
+# Ollama is self-hosted; we still assign a small compute-equivalent rate so routing has a cost signal.
+models:
+  - id: ollama-llama32-3b
+    provider: ollama
+    model_id: llama3.2:3b
+    cost_per_input_token: 0.02
+    cost_per_output_token: 0.02
+    average_latency_ms: 1200
+    quality_tier: low
+    enabled: true
+
+  - id: groq-llama-8b
+    provider: groq
+    model_id: llama-3.1-8b-instant
+    cost_per_input_token: 0.05
+    cost_per_output_token: 0.08
+    average_latency_ms: 250
+    quality_tier: low
+    enabled: true
+
+  - id: gemini-flash-lite
+    provider: gemini
+    model_id: gemini-2.5-flash-lite
+    cost_per_input_token: 0.10
+    cost_per_output_token: 0.40
+    average_latency_ms: 400
+    quality_tier: medium
+    enabled: true
+
+  - id: gemini-flash-lite-alt
+    provider: gemini
+    model_id: gemini-3.1-flash-lite
+    cost_per_input_token: 0.10
+    cost_per_output_token: 0.40
+    average_latency_ms: 400
+    quality_tier: medium
+    enabled: true
+
+  - id: groq-llama-70b
+    provider: groq
+    model_id: llama-3.3-70b-versatile
+    cost_per_input_token: 0.59
+    cost_per_output_token: 0.79
+    average_latency_ms: 550
+    quality_tier: high
+    enabled: true
+
+  - id: gemini-flash
+    provider: gemini
+    model_id: gemini-2.5-flash
+    cost_per_input_token: 0.30
+    cost_per_output_token: 2.50
+    average_latency_ms: 500
+    quality_tier: high
+    enabled: true
+
+  - id: mock-local
+    provider: mock
+    model_id: mock-v1
+    cost_per_input_token: 0.01
+    cost_per_output_token: 0.01
+    average_latency_ms: 5
+    quality_tier: low
+    enabled: true

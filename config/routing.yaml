@@ -1,0 +1,47 @@
+# Complexity tier -> ordered model ids (first healthy match wins).
+tiers:
+  1:
+    - ollama-llama32-3b
+    - groq-llama-8b
+    - mock-local
+  2:
+    - gemini-flash-lite
+    - gemini-flash-lite-alt
+    - groq-llama-8b
+    - mock-local
+  3:
+    - groq-llama-70b
+    - gemini-flash
+    - mock-local
+
+judge_candidates:
+  - groq-llama-70b
+  - gemini-flash
+  - mock-local
+
+# Always-premium baseline used for the dashboard "you saved $X" number.
+baseline_model: groq-llama-70b
+
+# Hypothetical GPT-4o list price for the portfolio comparison (never called).
+hypothetical_gpt4o:
+  cost_per_input_token: 2.50
+  cost_per_output_token: 10.00
+
+quality:
+  fail_threshold: 0.62
+  judge_score_min: 4
+  max_escalation_ms: 8000
+
+use_cases:
+  extraction:
+    description: Key fields present vs judge output
+    fail_threshold: 0.70
+  summarization:
+    description: LLM-as-judge score at least 4/5
+    fail_threshold: 0.75
+  classification:
+    description: Label agreement with high-tier model
+    fail_threshold: 0.80
+  general:
+    description: Lexical overlap plus optional judge
+    fail_threshold: 0.62
