@@ -9,7 +9,10 @@ venv/
 data/app.db
 data/app.db-journal
 data/feedback.jsonl
-artifacts/
+artifacts/*
+!artifacts/classifier_metrics.json
+!artifacts/load_test_report.json
 models/*.pkl
+!models/complexity_clf.pkl
 .streamlit/
 .DS_Store

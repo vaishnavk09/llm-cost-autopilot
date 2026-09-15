@@ -2,7 +2,7 @@
 
 An intelligent routing layer in front of **free and open-source LLMs**. It scores each prompt’s complexity, sends it to the cheapest model that can handle it, checks quality in the background, and escalates when the cheap model is wrong.
 
-**Headline result (offline mock load, 500 diverse prompts):** see `artifacts/load_test_report.json` after `python scripts/offline_savings.py 500`. Typical shadow-cost reduction vs always using Groq Llama 3.3 70B is **on the order of 80–95%**, because most traffic is simple/mid-tier. Actual cash spend on Groq/Gemini free tiers is **$0**.
+**Headline result (offline mock load, 500 prompts):** **48.9%** shadow-cost reduction vs always using Groq Llama 3.3 70B, and **94.6%** vs hypothetical GPT-4o list prices. Classifier held-out accuracy: **92.9%**. Cash spend on Groq / Gemini / Hugging Face free tiers is **$0**. Full write-up: [CASESTUDY.md](CASESTUDY.md).
 
 This is not a wrapper around GPT-4o or Claude. Those APIs are not used. GPT-4o list prices appear on the dashboard only as a hypothetical “if you had sent everything to GPT-4o” comparison.
 
@@ -17,8 +17,9 @@ Client --> FastAPI POST /v1/completions
               |-- sklearn complexity classifier (tier 1 / 2 / 3)
               |-- YAML routing map
               |-- unified send_request()
-              |      +-- Groq (Llama 8B / 70B)
+              |      +-- Groq (Llama 8B / 70B, free key)
               |      +-- Gemini Flash / Flash-Lite (free AI Studio key)
+              |      +-- Hugging Face Inference Router (Llama 3.2 3B, Qwen2.5 7B)
               |      +-- Ollama (local llama3.2:3b)
               |      +-- mock (offline demo)
               |-- SQLite audit log
@@ -30,8 +31,8 @@ Client --> FastAPI POST /v1/completions
 
 | Complexity | Examples | Default route |
 |---|---|---|
-| Tier 1 simple | reformat, extract, short Q&A | Ollama 3B or Groq 8B |
-| Tier 2 moderate | summary, classify, structured analysis | Gemini Flash-Lite |
+| Tier 1 simple | reformat, extract, short Q&A | Ollama 3B, Groq 8B, or HF Llama 3.2 3B |
+| Tier 2 moderate | summary, classify, structured analysis | Gemini Flash-Lite or HF Qwen2.5 7B |
 | Tier 3 complex | multi-step reasoning, judgment | Groq 70B (judge + premium) |
 
 Swap mappings in `config/routing.yaml` or `PUT /v1/routing-config` without redeploying code.
@@ -68,7 +69,8 @@ The response includes `routing.complexity_tier`, `routing.reason`, shadow `cost`
 
 1. Groq key (no credit card): https://console.groq.com  
 2. Gemini key: https://aistudio.google.com  
-3. Optional Ollama: install from https://ollama.com then `ollama pull llama3.2:3b`
+3. Hugging Face token (free): https://huggingface.co/settings/tokens  
+4. Optional Ollama: install from https://ollama.com then `ollama pull llama3.2:3b`
 
 Put keys in `.env`, keep `MOCK_LLM=0`. Missing keys are skipped; the router uses whatever is healthy.
 
@@ -116,7 +118,8 @@ Example body:
 {
   "messages": [{"role": "user", "content": "Summarize this passage in 3 bullets..."}],
   "use_case": "summarization",
-  "verify": true
+  "verify": true,
+  "wait_for_quality": false
 }
 ```
 
@@ -157,6 +160,4 @@ pytest -q
 
 ## Case study (portfolio)
 
-> I built a routing layer that reduced shadow LLM cost by **X%** versus always calling a 70B model, while keeping a verification loop that escalates misses. Complexity is a sklearn classifier (target ≥80% held-out accuracy). Providers are Groq, Gemini free tier, and optional Ollama — no paid OpenAI/Anthropic keys.
-
-Fill in **X** from `artifacts/load_test_report.json` → `cost_reduction_pct` after you run the load test.
+> I built a routing layer that reduced shadow LLM cost by **48.9%** versus always calling a 70B model (and **94.6%** vs GPT-4o list prices) while keeping a verification loop that escalates misses. Complexity is a sklearn classifier (**92.9%** held-out accuracy). Providers are Groq, Gemini free tier, Hugging Face open-weight models, and optional Ollama — no paid OpenAI/Anthropic keys.

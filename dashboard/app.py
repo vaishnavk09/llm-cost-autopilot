@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import altair as alt
 import pandas as pd
 import streamlit as st
 
@@ -18,7 +19,7 @@ init_db()
 stats = fetch_stats()
 
 st.title("LLM Cost Autopilot")
-st.caption("Shadow-cost routing across free Groq, Gemini, and local Ollama models.")
+st.caption("Shadow-cost routing across free Groq, Gemini, Hugging Face, and local Ollama models.")
 
 pct = stats["cost_reduction_pct"]
 st.metric(
@@ -42,6 +43,18 @@ dist = stats["routing_distribution"]
 if dist:
     st.subheader("Routing distribution")
     df = pd.DataFrame(dist)
+    pie_source = df.copy()
+    pie_source["share"] = pie_source["count"] / pie_source["count"].sum()
+    st.altair_chart(
+        alt.Chart(pie_source)
+        .mark_arc(innerRadius=50)
+        .encode(
+            theta="count:Q",
+            color="model:N",
+            tooltip=["model", "count", "cost", "share"],
+        ),
+        use_container_width=True,
+    )
     st.bar_chart(df.set_index("model")["count"])
     st.dataframe(df, use_container_width=True)
 

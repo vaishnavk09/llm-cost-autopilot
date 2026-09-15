@@ -1,0 +1,33 @@
+{
+  "n": 500,
+  "mode": "offline_mock",
+  "total_requests": 500,
+  "routed_cost": 0.0070889,
+  "baseline_cost": 0.0138716,
+  "gpt4o_cost": 0.132395,
+  "saved_vs_premium": 0.006782699999999999,
+  "cost_reduction_pct": 48.89630612186049,
+  "saved_vs_gpt4o": 0.1253061,
+  "cost_reduction_vs_gpt4o_pct": 94.64564371766305,
+  "avg_quality": 0.0,
+  "avg_latency_ms": 1.0,
+  "escalations": 0,
+  "escalation_rate": 0.0,
+  "routing_distribution": [
+    {
+      "model": "gemini-flash-lite",
+      "count": 168,
+      "cost": 0.0018135
+    },
+    {
+      "model": "groq-llama-70b",
+      "count": 140,
+      "cost": 0.0051632
+    },
+    {
+      "model": "ollama-llama32-3b",
+      "count": 192,
+      "cost": 0.0001122
+    }
+  ]
+}

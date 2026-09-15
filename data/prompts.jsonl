@@ -1,0 +1,210 @@
+{"prompt": "Reformat only. Reformat this list as comma-separated values: apples bananas cherries dates (variant 0)", "tier": 1}
+{"prompt": "Extract the email address from: contact Jane at jane.doe1@example.com today", "tier": 1}
+{"prompt": "What is the capital of France? (variant 2)", "tier": 1}
+{"prompt": "Reformat only. Lowercase this title: The Quick Brown Fox (variant 3)", "tier": 1}
+{"prompt": "Convert 72 degrees Fahrenheit to Celsius. Only the number. (variant 4)", "tier": 1}
+{"prompt": "Strip HTML tags from: <p>Hello <b>world</b></p> (variant 5)", "tier": 1}
+{"prompt": "Reformat only. Return JSON with keys name and age from: Maya is 29 years old. (variant 6)", "tier": 1}
+{"prompt": "Translate to Spanish: Good morning (variant 7)", "tier": 1}
+{"prompt": "How many words are in: the cat sat on the mat (variant 8)", "tier": 1}
+{"prompt": "Reformat only. Fix spelling: recieve the packge tommorow (variant 9)", "tier": 1}
+{"prompt": "Is 17 a prime number? Answer yes or no. (variant 10)", "tier": 1}
+{"prompt": "Format this phone number as (XXX) XXX-XXXX: 4155550198 (variant 11)", "tier": 1}
+{"prompt": "Reformat only. Extract dates from: Meeting on 2024-03-12 and follow-up 12 April 2024. (variant 12)", "tier": 1}
+{"prompt": "Given the following note: 'buy milk'. Rewrite as a checklist item. (variant 13)", "tier": 1}
+{"prompt": "What color is the sky on a clear day? One word. (variant 14)", "tier": 1}
+{"prompt": "Reformat only. Copy-edit: i went to paris last summer (variant 15)", "tier": 1}
+{"prompt": "Convert this bullet list to numbered: red, green, blue (variant 16)", "tier": 1}
+{"prompt": "Extract the URL: see https://docs.python.org/3/ for details (variant 17)", "tier": 1}
+{"prompt": "Reformat only. True or false: water boils at 100C at sea level. (variant 18)", "tier": 1}
+{"prompt": "Trim whitespace and return:    padded text    (variant 19)", "tier": 1}
+{"prompt": "Reformat this list as comma-separated values: apples bananas cherries dates (variant 20)", "tier": 1}
+{"prompt": "Reformat only. Extract the email address from: contact Jane at jane.doe21@example.com today", "tier": 1}
+{"prompt": "What is the capital of France? (variant 22)", "tier": 1}
+{"prompt": "Lowercase this title: The Quick Brown Fox (variant 23)", "tier": 1}
+{"prompt": "Reformat only. Convert 72 degrees Fahrenheit to Celsius. Only the number. (variant 24)", "tier": 1}
+{"prompt": "Strip HTML tags from: <p>Hello <b>world</b></p> (variant 25)", "tier": 1}
+{"prompt": "Return JSON with keys name and age from: Maya is 29 years old. (variant 26)", "tier": 1}
+{"prompt": "Reformat only. Translate to Spanish: Good morning (variant 27)", "tier": 1}
+{"prompt": "How many words are in: the cat sat on the mat (variant 28)", "tier": 1}
+{"prompt": "Fix spelling: recieve the packge tommorow (variant 29)", "tier": 1}
+{"prompt": "Reformat only. Is 17 a prime number? Answer yes or no. (variant 30)", "tier": 1}
+{"prompt": "Format this phone number as (XXX) XXX-XXXX: 4155550198 (variant 31)", "tier": 1}
+{"prompt": "Extract dates from: Meeting on 2024-03-12 and follow-up 12 April 2024. (variant 32)", "tier": 1}
+{"prompt": "Reformat only. Given the following note: 'buy milk'. Rewrite as a checklist item. (variant 33)", "tier": 1}
+{"prompt": "What color is the sky on a clear day? One word. (variant 34)", "tier": 1}
+{"prompt": "Copy-edit: i went to paris last summer (variant 35)", "tier": 1}
+{"prompt": "Reformat only. Convert this bullet list to numbered: red, green, blue (variant 36)", "tier": 1}
+{"prompt": "Extract the URL: see https://docs.python.org/3/ for details (variant 37)", "tier": 1}
+{"prompt": "True or false: water boils at 100C at sea level. (variant 38)", "tier": 1}
+{"prompt": "Reformat only. Trim whitespace and return:    padded text    (variant 39)", "tier": 1}
+{"prompt": "Reformat this list as comma-separated values: apples bananas cherries dates (variant 40)", "tier": 1}
+{"prompt": "Extract the email address from: contact Jane at jane.doe41@example.com today", "tier": 1}
+{"prompt": "Reformat only. What is the capital of France? (variant 42)", "tier": 1}
+{"prompt": "Lowercase this title: The Quick Brown Fox (variant 43)", "tier": 1}
+{"prompt": "Convert 72 degrees Fahrenheit to Celsius. Only the number. (variant 44)", "tier": 1}
+{"prompt": "Reformat only. Strip HTML tags from: <p>Hello <b>world</b></p> (variant 45)", "tier": 1}
+{"prompt": "Return JSON with keys name and age from: Maya is 29 years old. (variant 46)", "tier": 1}
+{"prompt": "Translate to Spanish: Good morning (variant 47)", "tier": 1}
+{"prompt": "Reformat only. How many words are in: the cat sat on the mat (variant 48)", "tier": 1}
+{"prompt": "Fix spelling: recieve the packge tommorow (variant 49)", "tier": 1}
+{"prompt": "Is 17 a prime number? Answer yes or no. (variant 50)", "tier": 1}
+{"prompt": "Reformat only. Format this phone number as (XXX) XXX-XXXX: 4155550198 (variant 51)", "tier": 1}
+{"prompt": "Extract dates from: Meeting on 2024-03-12 and follow-up 12 April 2024. (variant 52)", "tier": 1}
+{"prompt": "Given the following note: 'buy milk'. Rewrite as a checklist item. (variant 53)", "tier": 1}
+{"prompt": "Reformat only. What color is the sky on a clear day? One word. (variant 54)", "tier": 1}
+{"prompt": "Copy-edit: i went to paris last summer (variant 55)", "tier": 1}
+{"prompt": "Convert this bullet list to numbered: red, green, blue (variant 56)", "tier": 1}
+{"prompt": "Reformat only. Extract the URL: see https://docs.python.org/3/ for details (variant 57)", "tier": 1}
+{"prompt": "True or false: water boils at 100C at sea level. (variant 58)", "tier": 1}
+{"prompt": "Trim whitespace and return:    padded text    (variant 59)", "tier": 1}
+{"prompt": "Reformat only. Reformat this list as comma-separated values: apples bananas cherries dates (variant 60)", "tier": 1}
+{"prompt": "Extract the email address from: contact Jane at jane.doe61@example.com today", "tier": 1}
+{"prompt": "What is the capital of France? (variant 62)", "tier": 1}
+{"prompt": "Reformat only. Lowercase this title: The Quick Brown Fox (variant 63)", "tier": 1}
+{"prompt": "Convert 72 degrees Fahrenheit to Celsius. Only the number. (variant 64)", "tier": 1}
+{"prompt": "Strip HTML tags from: <p>Hello <b>world</b></p> (variant 65)", "tier": 1}
+{"prompt": "Reformat only. Return JSON with keys name and age from: Maya is 29 years old. (variant 66)", "tier": 1}
+{"prompt": "Translate to Spanish: Good morning (variant 67)", "tier": 1}
+{"prompt": "How many words are in: the cat sat on the mat (variant 68)", "tier": 1}
+{"prompt": "Reformat only. Fix spelling: recieve the packge tommorow (variant 69)", "tier": 1}
+{"prompt": "Summarize the following passage in 3 bullets. Passage: Urban bees declined 18% after drought year 0.\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Classify the sentiment of this review as positive, negative, or mixed: The battery lasts but the camera is grainy. (variant 1)", "tier": 2}
+{"prompt": "Outline the main claims in this article excerpt: Researchers argue remote work raises output but weakens mentoring. (variant 2)", "tier": 2}
+{"prompt": "Extract structured JSON with fields company, amount, date from: Acme invoiced $12,400 on May 3. (variant 3)", "tier": 2}
+{"prompt": "Categorize this support ticket: billing, technical, or account: I was charged twice for March. (variant 4)\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Summarize the transcript: Agent greeted customer, reset password, confirmed login. (variant 5)", "tier": 2}
+{"prompt": "Label this news headline topic: Markets rally as inflation cools (variant 6)", "tier": 2}
+{"prompt": "Compare these two product blurbs at a high level: A is cheaper, B has longer warranty. (variant 7)", "tier": 2}
+{"prompt": "Produce a table of risks vs mitigations for launching a beta waitlist. (variant 8)\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Classify intent: book_flight, cancel, status — User: Can I change my Tuesday seat? (variant 9)", "tier": 2}
+{"prompt": "Summarize this README paragraph for a non-engineer. Context: The CLI uploads CSV files to S3. (variant 10)", "tier": 2}
+{"prompt": "Extract key-value pairs from: env=prod region=us-east-1 replicas=3 (variant 11)", "tier": 2}
+{"prompt": "Write a structured analysis of why NPS dropped from 62 to 51 in one quarter. (variant 12)\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Categorize emails as spam or ham: Congratulations you won a cruise if you click now. (variant 13)", "tier": 2}
+{"prompt": "Summarize meeting notes into decisions, owners, and dates. (variant 14)", "tier": 2}
+{"prompt": "Classify the document type: invoice, contract, or memo. Text: Payment due net 30 for services rendered. (variant 15)", "tier": 2}
+{"prompt": "Outline a 5-step onboarding checklist for a new SRE. (variant 16)\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Extract entities (people, orgs, locations) from: Satya spoke in Redmond about OpenAI. (variant 17)", "tier": 2}
+{"prompt": "Sentiment + aspect labels for: The UI is gorgeous but search is slow. (variant 18)", "tier": 2}
+{"prompt": "Summarize this policy in plain language. Context: PTO accrues 1.5 days per month, max 20. (variant 19)", "tier": 2}
+{"prompt": "Summarize the following passage in 3 bullets. Passage: Urban bees declined 18% after drought year 20.\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Classify the sentiment of this review as positive, negative, or mixed: The battery lasts but the camera is grainy. (variant 21)", "tier": 2}
+{"prompt": "Outline the main claims in this article excerpt: Researchers argue remote work raises output but weakens mentoring. (variant 22)", "tier": 2}
+{"prompt": "Extract structured JSON with fields company, amount, date from: Acme invoiced $12,400 on May 3. (variant 23)", "tier": 2}
+{"prompt": "Categorize this support ticket: billing, technical, or account: I was charged twice for March. (variant 24)\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Summarize the transcript: Agent greeted customer, reset password, confirmed login. (variant 25)", "tier": 2}
+{"prompt": "Label this news headline topic: Markets rally as inflation cools (variant 26)", "tier": 2}
+{"prompt": "Compare these two product blurbs at a high level: A is cheaper, B has longer warranty. (variant 27)", "tier": 2}
+{"prompt": "Produce a table of risks vs mitigations for launching a beta waitlist. (variant 28)\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Classify intent: book_flight, cancel, status — User: Can I change my Tuesday seat? (variant 29)", "tier": 2}
+{"prompt": "Summarize this README paragraph for a non-engineer. Context: The CLI uploads CSV files to S3. (variant 30)", "tier": 2}
+{"prompt": "Extract key-value pairs from: env=prod region=us-east-1 replicas=3 (variant 31)", "tier": 2}
+{"prompt": "Write a structured analysis of why NPS dropped from 62 to 51 in one quarter. (variant 32)\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Categorize emails as spam or ham: Congratulations you won a cruise if you click now. (variant 33)", "tier": 2}
+{"prompt": "Summarize meeting notes into decisions, owners, and dates. (variant 34)", "tier": 2}
+{"prompt": "Classify the document type: invoice, contract, or memo. Text: Payment due net 30 for services rendered. (variant 35)", "tier": 2}
+{"prompt": "Outline a 5-step onboarding checklist for a new SRE. (variant 36)\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Extract entities (people, orgs, locations) from: Satya spoke in Redmond about OpenAI. (variant 37)", "tier": 2}
+{"prompt": "Sentiment + aspect labels for: The UI is gorgeous but search is slow. (variant 38)", "tier": 2}
+{"prompt": "Summarize this policy in plain language. Context: PTO accrues 1.5 days per month, max 20. (variant 39)", "tier": 2}
+{"prompt": "Summarize the following passage in 3 bullets. Passage: Urban bees declined 18% after drought year 40.\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Classify the sentiment of this review as positive, negative, or mixed: The battery lasts but the camera is grainy. (variant 41)", "tier": 2}
+{"prompt": "Outline the main claims in this article excerpt: Researchers argue remote work raises output but weakens mentoring. (variant 42)", "tier": 2}
+{"prompt": "Extract structured JSON with fields company, amount, date from: Acme invoiced $12,400 on May 3. (variant 43)", "tier": 2}
+{"prompt": "Categorize this support ticket: billing, technical, or account: I was charged twice for March. (variant 44)\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Summarize the transcript: Agent greeted customer, reset password, confirmed login. (variant 45)", "tier": 2}
+{"prompt": "Label this news headline topic: Markets rally as inflation cools (variant 46)", "tier": 2}
+{"prompt": "Compare these two product blurbs at a high level: A is cheaper, B has longer warranty. (variant 47)", "tier": 2}
+{"prompt": "Produce a table of risks vs mitigations for launching a beta waitlist. (variant 48)\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Classify intent: book_flight, cancel, status — User: Can I change my Tuesday seat? (variant 49)", "tier": 2}
+{"prompt": "Summarize this README paragraph for a non-engineer. Context: The CLI uploads CSV files to S3. (variant 50)", "tier": 2}
+{"prompt": "Extract key-value pairs from: env=prod region=us-east-1 replicas=3 (variant 51)", "tier": 2}
+{"prompt": "Write a structured analysis of why NPS dropped from 62 to 51 in one quarter. (variant 52)\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Categorize emails as spam or ham: Congratulations you won a cruise if you click now. (variant 53)", "tier": 2}
+{"prompt": "Summarize meeting notes into decisions, owners, and dates. (variant 54)", "tier": 2}
+{"prompt": "Classify the document type: invoice, contract, or memo. Text: Payment due net 30 for services rendered. (variant 55)", "tier": 2}
+{"prompt": "Outline a 5-step onboarding checklist for a new SRE. (variant 56)\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Extract entities (people, orgs, locations) from: Satya spoke in Redmond about OpenAI. (variant 57)", "tier": 2}
+{"prompt": "Sentiment + aspect labels for: The UI is gorgeous but search is slow. (variant 58)", "tier": 2}
+{"prompt": "Summarize this policy in plain language. Context: PTO accrues 1.5 days per month, max 20. (variant 59)", "tier": 2}
+{"prompt": "Summarize the following passage in 3 bullets. Passage: Urban bees declined 18% after drought year 60.\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Classify the sentiment of this review as positive, negative, or mixed: The battery lasts but the camera is grainy. (variant 61)", "tier": 2}
+{"prompt": "Outline the main claims in this article excerpt: Researchers argue remote work raises output but weakens mentoring. (variant 62)", "tier": 2}
+{"prompt": "Extract structured JSON with fields company, amount, date from: Acme invoiced $12,400 on May 3. (variant 63)", "tier": 2}
+{"prompt": "Categorize this support ticket: billing, technical, or account: I was charged twice for March. (variant 64)\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Summarize the transcript: Agent greeted customer, reset password, confirmed login. (variant 65)", "tier": 2}
+{"prompt": "Label this news headline topic: Markets rally as inflation cools (variant 66)", "tier": 2}
+{"prompt": "Compare these two product blurbs at a high level: A is cheaper, B has longer warranty. (variant 67)", "tier": 2}
+{"prompt": "Produce a table of risks vs mitigations for launching a beta waitlist. (variant 68)\nReturn JSON. Must include a confidence field.", "tier": 2}
+{"prompt": "Classify intent: book_flight, cancel, status — User: Can I change my Tuesday seat? (variant 69)", "tier": 2}
+{"prompt": "Analyze the trade-offs between eventual consistency and strong consistency for a payments ledger. Reason step by step. (variant 0) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Compare RAG vs fine-tuning for a legal Q&A bot and justify a recommendation with constraints: must cite sources, latency under 2s. (variant 1)", "tier": 3}
+{"prompt": "Design a multi-step incident response plan for a leaked API key, including detection, rotation, and customer comms. Be nuanced. (variant 2) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Evaluate whether this A/B test (p=0.06, n=900) is enough to ship a checkout change. Critique the methodology. (variant 3)", "tier": 3}
+{"prompt": "Synthesize a strategy to cut LLM spend 40% without harming support CSAT. Consider routing, caching, and human fallback. (variant 4) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Debate the ethics of using customer tickets to train models. Present both sides then a reasoned policy. (variant 5)", "tier": 3}
+{"prompt": "Prove informally why binary search is O(log n) and when it would be the wrong tool. (variant 6) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Analyze this architecture: sync monolith + nightly ETL. Propose an event-driven redesign and compare failure modes. (variant 7)", "tier": 3}
+{"prompt": "Write a nuanced judgment: should we block a model that refuses medical advice but answers related chemistry questions? (variant 8) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Multi-step reasoning: given three vendor SLAs, pick one for a hospital paging system and justify. (variant 9)", "tier": 3}
+{"prompt": "Critique this prompt and redesign it for fewer hallucinations. Then explain why the new version is safer. (variant 10) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Compare CAP theorem implications for a global inventory service. Design around partition events. (variant 11)", "tier": 3}
+{"prompt": "Evaluate two candidate embeddings for legal search; reason about recall vs cost vs license constraints. (variant 12) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Create a creative but technically accurate explainer of KV-cache for a VP of Finance, then a deeper appendix for engineers. (variant 13)", "tier": 3}
+{"prompt": "Analyze failure of a canary that looked green: metrics, hidden cohorts, and a decision tree to roll back. (variant 14) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Design an eval harness for a classifier with shifting labels. Include sampling, judges, and cost controls. (variant 15)", "tier": 3}
+{"prompt": "Reason about whether 8B vs 70B is appropriate for contract redlining. Include risk of missed clauses. (variant 16) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Synthesize a 90-day plan to replace a vendor LLM with open-source, listing blockers and rollback criteria. (variant 17)", "tier": 3}
+{"prompt": "Nuanced judgment call: a model slightly misquotes a statute. Escalate, rewrite, or abstain? Defend the choice. (variant 18) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Compare streaming vs batch inference for nightly report generation; include energy, latency, and ops trade-offs. (variant 19)", "tier": 3}
+{"prompt": "Analyze the trade-offs between eventual consistency and strong consistency for a payments ledger. Reason step by step. (variant 20) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Compare RAG vs fine-tuning for a legal Q&A bot and justify a recommendation with constraints: must cite sources, latency under 2s. (variant 21)", "tier": 3}
+{"prompt": "Design a multi-step incident response plan for a leaked API key, including detection, rotation, and customer comms. Be nuanced. (variant 22) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Evaluate whether this A/B test (p=0.06, n=900) is enough to ship a checkout change. Critique the methodology. (variant 23)", "tier": 3}
+{"prompt": "Synthesize a strategy to cut LLM spend 40% without harming support CSAT. Consider routing, caching, and human fallback. (variant 24) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Debate the ethics of using customer tickets to train models. Present both sides then a reasoned policy. (variant 25)", "tier": 3}
+{"prompt": "Prove informally why binary search is O(log n) and when it would be the wrong tool. (variant 26) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Analyze this architecture: sync monolith + nightly ETL. Propose an event-driven redesign and compare failure modes. (variant 27)", "tier": 3}
+{"prompt": "Write a nuanced judgment: should we block a model that refuses medical advice but answers related chemistry questions? (variant 28) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Multi-step reasoning: given three vendor SLAs, pick one for a hospital paging system and justify. (variant 29)", "tier": 3}
+{"prompt": "Critique this prompt and redesign it for fewer hallucinations. Then explain why the new version is safer. (variant 30) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Compare CAP theorem implications for a global inventory service. Design around partition events. (variant 31)", "tier": 3}
+{"prompt": "Evaluate two candidate embeddings for legal search; reason about recall vs cost vs license constraints. (variant 32) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Create a creative but technically accurate explainer of KV-cache for a VP of Finance, then a deeper appendix for engineers. (variant 33)", "tier": 3}
+{"prompt": "Analyze failure of a canary that looked green: metrics, hidden cohorts, and a decision tree to roll back. (variant 34) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Design an eval harness for a classifier with shifting labels. Include sampling, judges, and cost controls. (variant 35)", "tier": 3}
+{"prompt": "Reason about whether 8B vs 70B is appropriate for contract redlining. Include risk of missed clauses. (variant 36) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Synthesize a 90-day plan to replace a vendor LLM with open-source, listing blockers and rollback criteria. (variant 37)", "tier": 3}
+{"prompt": "Nuanced judgment call: a model slightly misquotes a statute. Escalate, rewrite, or abstain? Defend the choice. (variant 38) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Compare streaming vs batch inference for nightly report generation; include energy, latency, and ops trade-offs. (variant 39)", "tier": 3}
+{"prompt": "Analyze the trade-offs between eventual consistency and strong consistency for a payments ledger. Reason step by step. (variant 40) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Compare RAG vs fine-tuning for a legal Q&A bot and justify a recommendation with constraints: must cite sources, latency under 2s. (variant 41)", "tier": 3}
+{"prompt": "Design a multi-step incident response plan for a leaked API key, including detection, rotation, and customer comms. Be nuanced. (variant 42) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Evaluate whether this A/B test (p=0.06, n=900) is enough to ship a checkout change. Critique the methodology. (variant 43)", "tier": 3}
+{"prompt": "Synthesize a strategy to cut LLM spend 40% without harming support CSAT. Consider routing, caching, and human fallback. (variant 44) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Debate the ethics of using customer tickets to train models. Present both sides then a reasoned policy. (variant 45)", "tier": 3}
+{"prompt": "Prove informally why binary search is O(log n) and when it would be the wrong tool. (variant 46) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Analyze this architecture: sync monolith + nightly ETL. Propose an event-driven redesign and compare failure modes. (variant 47)", "tier": 3}
+{"prompt": "Write a nuanced judgment: should we block a model that refuses medical advice but answers related chemistry questions? (variant 48) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Multi-step reasoning: given three vendor SLAs, pick one for a hospital paging system and justify. (variant 49)", "tier": 3}
+{"prompt": "Critique this prompt and redesign it for fewer hallucinations. Then explain why the new version is safer. (variant 50) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Compare CAP theorem implications for a global inventory service. Design around partition events. (variant 51)", "tier": 3}
+{"prompt": "Evaluate two candidate embeddings for legal search; reason about recall vs cost vs license constraints. (variant 52) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Create a creative but technically accurate explainer of KV-cache for a VP of Finance, then a deeper appendix for engineers. (variant 53)", "tier": 3}
+{"prompt": "Analyze failure of a canary that looked green: metrics, hidden cohorts, and a decision tree to roll back. (variant 54) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Design an eval harness for a classifier with shifting labels. Include sampling, judges, and cost controls. (variant 55)", "tier": 3}
+{"prompt": "Reason about whether 8B vs 70B is appropriate for contract redlining. Include risk of missed clauses. (variant 56) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Synthesize a 90-day plan to replace a vendor LLM with open-source, listing blockers and rollback criteria. (variant 57)", "tier": 3}
+{"prompt": "Nuanced judgment call: a model slightly misquotes a statute. Escalate, rewrite, or abstain? Defend the choice. (variant 58) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Compare streaming vs batch inference for nightly report generation; include energy, latency, and ops trade-offs. (variant 59)", "tier": 3}
+{"prompt": "Analyze the trade-offs between eventual consistency and strong consistency for a payments ledger. Reason step by step. (variant 60) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Compare RAG vs fine-tuning for a legal Q&A bot and justify a recommendation with constraints: must cite sources, latency under 2s. (variant 61)", "tier": 3}
+{"prompt": "Design a multi-step incident response plan for a leaked API key, including detection, rotation, and customer comms. Be nuanced. (variant 62) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Evaluate whether this A/B test (p=0.06, n=900) is enough to ship a checkout change. Critique the methodology. (variant 63)", "tier": 3}
+{"prompt": "Synthesize a strategy to cut LLM spend 40% without harming support CSAT. Consider routing, caching, and human fallback. (variant 64) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Debate the ethics of using customer tickets to train models. Present both sides then a reasoned policy. (variant 65)", "tier": 3}
+{"prompt": "Prove informally why binary search is O(log n) and when it would be the wrong tool. (variant 66) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Analyze this architecture: sync monolith + nightly ETL. Propose an event-driven redesign and compare failure modes. (variant 67)", "tier": 3}
+{"prompt": "Write a nuanced judgment: should we block a model that refuses medical advice but answers related chemistry questions? (variant 68) You must analyze, compare alternatives, and justify the recommendation.", "tier": 3}
+{"prompt": "Multi-step reasoning: given three vendor SLAs, pick one for a hospital paging system and justify. (variant 69)", "tier": 3}

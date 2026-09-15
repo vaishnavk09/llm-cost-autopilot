@@ -19,12 +19,11 @@ import app.settings as settings_mod
 
 
 async def run(n: int = 200) -> dict:
-    prompts = []
+    labeled = []
     with (ROOT / "data" / "prompts.jsonl").open(encoding="utf-8") as f:
-        for i, line in enumerate(f):
-            if i >= n:
-                break
-            prompts.append(json.loads(line)["prompt"])
+        for line in f:
+            labeled.append(json.loads(line)["prompt"])
+    prompts = [labeled[i % len(labeled)] for i in range(n)]
 
     s = Settings(mock_llm=True, database_path=str(ROOT / "data" / "app.db"))
     settings_mod.get_settings = lambda: s  # type: ignore
