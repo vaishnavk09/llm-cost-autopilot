@@ -3,15 +3,18 @@ tiers:
   1:
     - ollama-llama32-3b
     - groq-llama-8b
+    - hf-llama32-3b
     - mock-local
   2:
     - gemini-flash-lite
     - gemini-flash-lite-alt
+    - hf-qwen25-7b
     - groq-llama-8b
     - mock-local
   3:
     - groq-llama-70b
     - gemini-flash
+    - hf-qwen25-7b
     - mock-local
 
 judge_candidates:

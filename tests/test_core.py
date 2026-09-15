@@ -10,6 +10,7 @@ from app.client import send_request
 from app.features import extract_features, feature_vector
 from app.models import ModelConfig
 from app.providers.groq import GroqProvider
+from app.providers.huggingface import HuggingFaceProvider
 from app.registry import load_models, load_routing
 from app.verifier import token_overlap
 
@@ -59,11 +60,39 @@ async def test_groq_provider_http(respx_mock, mock_model: ModelConfig) -> None:
     assert resp.cost == model.shadow_cost(4, 1)
 
 
+@pytest.mark.asyncio
+async def test_huggingface_provider_http(respx_mock, mock_model: ModelConfig) -> None:
+    model = ModelConfig(
+        **{
+            **mock_model.__dict__,
+            "provider": "huggingface",
+            "model_id": "Qwen/Qwen2.5-7B-Instruct",
+            "id": "hf-qwen25-7b",
+        }
+    )
+    provider = HuggingFaceProvider(api_key="hf_test", base_url="https://router.huggingface.co/v1")
+    respx_mock.post("https://router.huggingface.co/v1/chat/completions").mock(
+        return_value=__import__("httpx").Response(
+            200,
+            json={
+                "choices": [{"message": {"content": "ok-hf"}}],
+                "usage": {"prompt_tokens": 3, "completion_tokens": 2},
+            },
+        )
+    )
+    resp = await provider.complete("ping", model)
+    assert resp.text == "ok-hf"
+    assert resp.provider == "huggingface"
+    assert resp.input_tokens == 3
+
+
 def test_registry_has_expected_models() -> None:
     ids = {m.id for m in load_models()}
     assert "groq-llama-8b" in ids
     assert "groq-llama-70b" in ids
     assert "gemini-flash-lite" in ids
+    assert "hf-llama32-3b" in ids
+    assert "hf-qwen25-7b" in ids
     routing = load_routing()
     assert 1 in routing["tiers"] or "1" in routing["tiers"]
 

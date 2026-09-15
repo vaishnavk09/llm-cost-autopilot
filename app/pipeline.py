@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from app.classifier import ComplexityClassifier
+from app.client import send_request
 from app.db import add_event, insert_request, update_request
 from app.features import extract_features, infer_use_case
 from app.models import LLMResponse, RoutingDecision
@@ -57,6 +58,7 @@ async def handle_completion(
     messages: list[dict],
     use_case: str | None = None,
     verify_async: bool = True,
+    wait_for_quality: bool = False,
 ) -> dict:
     prompt = messages_to_prompt(messages)
     clf = get_classifier()
@@ -73,7 +75,9 @@ async def handle_completion(
 
     settings = get_settings()
     remaining = settings.max_escalation_ms - response.latency_ms
-    if remaining > 500:
+    # Default API path returns immediately; the worker verifies later.
+    # wait_for_quality runs judge + optional escalation before responding.
+    if wait_for_quality and remaining > 500:
         quality_meta = await _maybe_escalate(
             prompt, use_case, response, decision, remaining
         )

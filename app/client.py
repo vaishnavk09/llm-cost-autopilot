@@ -4,6 +4,7 @@ from app.models import LLMResponse, ModelConfig
 from app.providers.base import Provider, ProviderError
 from app.providers.gemini import GeminiProvider
 from app.providers.groq import GroqProvider
+from app.providers.huggingface import HuggingFaceProvider
 from app.providers.mock import MockProvider
 from app.providers.ollama import OllamaProvider
 from app.settings import get_settings
@@ -17,6 +18,7 @@ def get_providers() -> dict[str, Provider]:
         _PROVIDERS = {
             "groq": GroqProvider(),
             "gemini": GeminiProvider(),
+            "huggingface": HuggingFaceProvider(),
             "ollama": OllamaProvider(),
             "mock": MockProvider(),
         }
@@ -43,7 +45,7 @@ async def send_request(prompt: str, model_config: ModelConfig, timeout: float = 
 async def provider_health() -> dict[str, bool]:
     settings = get_settings()
     if settings.mock_llm:
-        return {"mock": True, "groq": False, "gemini": False, "ollama": False}
+        return {"mock": True, "groq": False, "gemini": False, "huggingface": False, "ollama": False}
     out: dict[str, bool] = {}
     for name, provider in get_providers().items():
         out[name] = await provider.healthy()

@@ -6,7 +6,7 @@ from typing import Any, Literal
 
 
 QualityTier = Literal["high", "medium", "low"]
-ProviderName = Literal["groq", "gemini", "ollama", "mock"]
+ProviderName = Literal["groq", "gemini", "huggingface", "ollama", "mock"]
 
 
 class ComplexityTier(IntEnum):

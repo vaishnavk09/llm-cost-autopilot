@@ -11,6 +11,7 @@ class Settings(BaseSettings):
 
     groq_api_key: str = ""
     gemini_api_key: str = ""
+    hf_token: str = ""
     ollama_host: str = "http://localhost:11434"
     mock_llm: bool = False
     database_path: str = "data/app.db"
@@ -22,6 +23,7 @@ class Settings(BaseSettings):
     log_level: str = "INFO"
     groq_base_url: str = "https://api.groq.com/openai/v1"
     gemini_base_url: str = "https://generativelanguage.googleapis.com/v1beta"
+    hf_base_url: str = "https://router.huggingface.co/v1"
 
 
 def get_settings() -> Settings:

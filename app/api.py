@@ -37,6 +37,7 @@ class CompletionRequest(BaseModel):
     messages: list[ChatMessage]
     use_case: str | None = None
     verify: bool = True
+    wait_for_quality: bool = False
 
 
 class RoutingConfigUpdate(BaseModel):
@@ -62,6 +63,7 @@ async def completions(body: CompletionRequest, background: BackgroundTasks) -> d
             [m.model_dump() for m in body.messages],
             use_case=body.use_case,
             verify_async=body.verify,
+            wait_for_quality=body.wait_for_quality,
         )
     except FileNotFoundError as exc:
         raise HTTPException(503, str(exc)) from exc

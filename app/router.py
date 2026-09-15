@@ -9,6 +9,11 @@ from app.registry import get_model, load_routing, model_index
 from app.settings import get_settings
 
 
+def _tier_models(routing: dict[str, Any], tier: int) -> list[str]:
+    raw = routing.get("tiers") or {}
+    return list(raw.get(tier) or raw.get(str(tier)) or [])
+
+
 async def healthy_providers() -> dict[str, bool]:
     return await provider_health()
 
@@ -18,7 +23,7 @@ def _eligible(model: ModelConfig, health: dict[str, bool], mock: bool) -> bool:
         return True
     if model.provider == "mock":
         # Only use mock when no live backend is healthy.
-        live = any(health.get(p) for p in ("groq", "gemini", "ollama"))
+        live = any(health.get(p) for p in ("groq", "gemini", "ollama", "huggingface"))
         return not live
     return bool(health.get(model.provider))
 
@@ -28,7 +33,7 @@ async def pick_model(tier: int, routing: dict[str, Any] | None = None) -> tuple[
     routing = routing or load_routing()
     health = await healthy_providers()
     tried: list[str] = []
-    preferred = (routing.get("tiers") or {}).get(tier) or (routing.get("tiers") or {}).get(str(tier)) or []
+    preferred = _tier_models(routing, tier)
     for model_id in preferred:
         tried.append(model_id)
         try:
@@ -103,7 +108,7 @@ async def complete_with_failover(prompt: str, decision: RoutingDecision) -> tupl
         errors.append(f"{decision.model.id}: {exc}")
 
     routing = load_routing()
-    preferred = (routing.get("tiers") or {}).get(decision.complexity_tier) or []
+    preferred = _tier_models(routing, decision.complexity_tier)
     health = await healthy_providers()
     settings = get_settings()
     for model_id in preferred:
